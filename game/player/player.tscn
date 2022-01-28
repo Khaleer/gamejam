@@ -6,11 +6,15 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 31.75, 31 )
 
-[node name="player" type="KinematicBody2D"]
+[node name="player" type="KinematicBody2D" groups=[
+"player",
+]]
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
 }
+gravity = 2500
+jump = -900
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
@@ -19,8 +23,7 @@ texture = ExtResource( 1 )
 position = Vector2( 0.25, 0 )
 shape = SubResource( 1 )
 
-[node name="Right_Cast" type="RayCast2D" parent="."]
-cast_to = Vector2( 50, 0 )
-
-[node name="Left_Cast" type="RayCast2D" parent="."]
-cast_to = Vector2( -50, 0 )
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+smoothing_enabled = true
+smoothing_speed = 2.0
