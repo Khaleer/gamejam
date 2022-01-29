@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://items/Time_machine.tscn" type="PackedScene" id=1]
 [ext_resource path="res://player/player.tscn" type="PackedScene" id=2]
@@ -8,7 +8,6 @@
 [ext_resource path="res://levels/screen_effect.tscn" type="PackedScene" id=6]
 [ext_resource path="res://levels/Level_1.gd" type="Script" id=7]
 [ext_resource path="res://levels/popup.tscn" type="PackedScene" id=8]
-[ext_resource path="res://levels/popup.gd" type="Script" id=9]
 
 [node name="Level_1" type="Node2D"]
 script = ExtResource( 7 )
@@ -30,6 +29,6 @@ position = Vector2( 200, 440 )
 [node name="transition_Screen" parent="." instance=ExtResource( 6 )]
 
 [node name="popup" parent="." instance=ExtResource( 8 )]
-script = ExtResource( 9 )
 
 [connection signal="timewarp" from="Time_machine" to="transition_Screen" method="_on_Time_machine_timewarp"]
+[connection signal="popup_flower" from="items2" to="popup" method="_on_items2_popup_flower"]

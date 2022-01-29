@@ -1,11 +1,9 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
 
-[node name="popup" type="Control"]
-margin_right = 456.0
-margin_bottom = 184.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[ext_resource path="res://levels/popup.gd" type="Script" id=1]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource( 1 )
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 margin_right = 456.0
@@ -43,3 +41,8 @@ margin_right = 356.0
 margin_bottom = 113.0
 text = "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
 autowrap = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
