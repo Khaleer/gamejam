@@ -1,11 +1,15 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://items/Time_machine.tscn" type="PackedScene" id=1]
 [ext_resource path="res://player/player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://levels/tileset_1.tscn" type="PackedScene" id=3]
-[ext_resource path="res://items/item.tscn" type="PackedScene" id=4]
+[ext_resource path="res://items/item_flower.tscn" type="PackedScene" id=4]
+[ext_resource path="res://items/item_onion.tscn" type="PackedScene" id=5]
+[ext_resource path="res://levels/screen_effect.tscn" type="PackedScene" id=6]
+[ext_resource path="res://levels/Level_1.gd" type="Script" id=7]
 
 [node name="Level_1" type="Node2D"]
+script = ExtResource( 7 )
 
 [node name="player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 752, 320 )
@@ -15,5 +19,12 @@ position = Vector2( 752, 320 )
 [node name="Time_machine" parent="." instance=ExtResource( 1 )]
 position = Vector2( 1640, 288 )
 
-[node name="items" parent="." instance=ExtResource( 4 )]
-position = Vector2( 344, 448 )
+[node name="items2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 968, 448 )
+
+[node name="items" parent="." instance=ExtResource( 5 )]
+position = Vector2( 200, 440 )
+
+[node name="transition_Screen" parent="." instance=ExtResource( 6 )]
+
+[connection signal="timewarp" from="Time_machine" to="transition_Screen" method="_on_Time_machine_timewarp"]
