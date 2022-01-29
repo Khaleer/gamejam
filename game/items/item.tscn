@@ -13,7 +13,7 @@ script = ExtResource( 2 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-modulate = Color( 0.952941, 0.0392157, 0.0392157, 1 )
+modulate = Color( 0.945098, 0.952941, 0.0392157, 1 )
 texture = ExtResource( 1 )
 
 [connection signal="body_entered" from="." to="." method="_on_items_body_entered"]
