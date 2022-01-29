@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ReadyFarmerreka.png-5b62c8b08c6ad4e0e059635d9d03c0a8.stex"
+path="res://.import/płotS.png-e8648bc75ccda44d15c44b2d6082fdb9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ReadyFarmerreka.png"
-dest_files=[ "res://.import/ReadyFarmerreka.png-5b62c8b08c6ad4e0e059635d9d03c0a8.stex" ]
+source_file="res://Tileset/płotS.png"
+dest_files=[ "res://.import/płotS.png-e8648bc75ccda44d15c44b2d6082fdb9.stex" ]
 
 [params]
 

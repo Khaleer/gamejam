@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ReadyFarmerreka.png-5b62c8b08c6ad4e0e059635d9d03c0a8.stex"
+path="res://.import/beczka.png-d6f3b2b7f0c2bfd962748448e25b5868.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ReadyFarmerreka.png"
-dest_files=[ "res://.import/ReadyFarmerreka.png-5b62c8b08c6ad4e0e059635d9d03c0a8.stex" ]
+source_file="res://Tileset/beczka.png"
+dest_files=[ "res://.import/beczka.png-d6f3b2b7f0c2bfd962748448e25b5868.stex" ]
 
 [params]
 

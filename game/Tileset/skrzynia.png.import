@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ReadyFarmerreka.png-5b62c8b08c6ad4e0e059635d9d03c0a8.stex"
+path="res://.import/skrzynia.png-4c0c4bcf6e161a2717fdf7c4ad7bdbb1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ReadyFarmerreka.png"
-dest_files=[ "res://.import/ReadyFarmerreka.png-5b62c8b08c6ad4e0e059635d9d03c0a8.stex" ]
+source_file="res://Tileset/skrzynia.png"
+dest_files=[ "res://.import/skrzynia.png-4c0c4bcf6e161a2717fdf7c4ad7bdbb1.stex" ]
 
 [params]
 
