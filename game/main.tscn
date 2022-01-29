@@ -1,0 +1,34 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://UI_START_MENU.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 0.334
+anchor_bottom = 0.097
+margin_left = 64.0
+margin_top = 64.0
+margin_right = -86.016
+margin_bottom = 69.8
+text = "TITLE"
+align = 1
+valign = 1
+
+[node name="Button" type="Button" parent="."]
+margin_left = 64.0
+margin_top = 448.0
+margin_right = 256.0
+margin_bottom = 504.0
+text = "START GAME"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

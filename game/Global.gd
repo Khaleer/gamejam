@@ -1,15 +1,7 @@
 extends Node
 
-
-var is_item_collected = false
-var item = 0 
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+var item_one_collected = false
+var item_two_collected = false
+var item_three_collected = false
+var item_four_collected = false
+var item_five_collected = false

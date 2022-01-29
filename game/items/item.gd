@@ -5,7 +5,7 @@ signal item_collected
 
 func collected():
 	emit_signal("item_collected")
-	Global.is_item_collected = true
+	Global.item_one_collected = true
 	queue_free()
 
 func _on_items_body_entered(body):
