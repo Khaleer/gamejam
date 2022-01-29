@@ -14,9 +14,11 @@ func item_test():
 
 
 
-
 func _on_Time_machine_body_entered(body: Node) -> void:
 	item_test()
 	if body.is_in_group("player") and item_test() == true:
 		get_tree().change_scene("res://levels/Level_2.tscn")
 		emit_signal("timemachinewarp")
+
+
+
