@@ -1,6 +1,6 @@
 extends Area2D
 
-signal timemachinewarp
+signal timewarp
 
 func item_test():
 	var test = 0
@@ -11,14 +11,15 @@ func item_test():
 	if test == 2:
 		return true
 
-
-
+func _ready():
+	$Panel.visible = false
 
 func _on_Time_machine_body_entered(body: Node) -> void:
 	item_test()
+	$Panel.visible = true
 	if body.is_in_group("player") and item_test() == true:
-		get_tree().change_scene("res://levels/Level_2.tscn")
-		emit_signal("timemachinewarp")
+		emit_signal("timewarp")
+		#get_tree().change_scene("res://levels/Level_2.tscn")
 
-
-
+func _on_Time_machine_body_exited(body: Node) -> void:
+	$Panel.visible = false

@@ -27,4 +27,4 @@ position = Vector2( 200, 440 )
 
 [node name="transition_Screen" parent="." instance=ExtResource( 6 )]
 
-[connection signal="timemachinewarp" from="Time_machine" to="transition_Screen" method="_on_Time_machine_timemachinewarp"]
+[connection signal="timewarp" from="Time_machine" to="transition_Screen" method="_on_Time_machine_timewarp"]
