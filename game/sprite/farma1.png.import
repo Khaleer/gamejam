@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ReadyFarmerreka.png-5b62c8b08c6ad4e0e059635d9d03c0a8.stex"
+path="res://.import/farma1.png-a6d1024f5ac3df759a8a7961194a7c17.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ReadyFarmerreka.png"
-dest_files=[ "res://.import/ReadyFarmerreka.png-5b62c8b08c6ad4e0e059635d9d03c0a8.stex" ]
+source_file="res://sprite/farma1.png"
+dest_files=[ "res://.import/farma1.png-a6d1024f5ac3df759a8a7961194a7c17.stex" ]
 
 [params]
 
