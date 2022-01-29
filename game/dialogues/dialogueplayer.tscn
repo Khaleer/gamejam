@@ -4,6 +4,7 @@
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource( 1 )
+dialogue_file = "res://dialogues/dialog.json"
 
 [node name="Panel" type="Panel" parent="."]
 margin_left = 64.0
