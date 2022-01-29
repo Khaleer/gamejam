@@ -1,16 +1,44 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://UI_START_MENU.gd" type="Script" id=1]
+[ext_resource path="res://sprite/farmaruiny3.png" type="Texture" id=2]
+[ext_resource path="res://sprite/farmaruiny2.png" type="Texture" id=3]
+[ext_resource path="res://sprite/farmaruiny.png" type="Texture" id=4]
+[ext_resource path="res://sprite/farmaruinyniebo.png" type="Texture" id=5]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 8.0
+margin_top = 64.0
 margin_right = 8.0
+margin_bottom = 64.0
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Sprite4" type="Sprite" parent="Node2D"]
+position = Vector2( 504, 239 )
+scale = Vector2( 0.533333, 0.317708 )
+texture = ExtResource( 5 )
+
+[node name="Sprite3" type="Sprite" parent="Node2D"]
+position = Vector2( 506.281, 239 )
+scale = Vector2( 0.320125, 0.317708 )
+texture = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="Node2D"]
+position = Vector2( 506.281, 239 )
+scale = Vector2( 0.320125, 0.317708 )
+texture = ExtResource( 3 )
+
+[node name="Sprite2" type="Sprite" parent="Node2D"]
+position = Vector2( 506.281, 239 )
+scale = Vector2( 0.320125, 0.317708 )
+texture = ExtResource( 4 )
 
 [node name="Label" type="Label" parent="."]
 anchor_top = 0.5
