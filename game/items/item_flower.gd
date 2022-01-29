@@ -1,10 +1,11 @@
 extends Area2D
 
-
+signal popup_flower
 signal item_collected
 
 func collected():
 	emit_signal("item_collected")
+	emit_signal("popup_flower")
 	Global.item_flower_collected = true
 	queue_free()
 

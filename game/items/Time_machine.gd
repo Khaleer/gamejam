@@ -17,7 +17,7 @@ func _ready():
 func _on_Time_machine_body_entered(body: Node) -> void:
 	item_test()
 	$Panel.visible = true
-	if body.is_in_group("player") and item_test() == true:
+	if body.is_in_group("player") and item_test():
 		emit_signal("timewarp")
 		#get_tree().change_scene("res://levels/Level_2.tscn")
 
