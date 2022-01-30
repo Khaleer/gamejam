@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/belkot.wav-16a558dba3c8daf38c2e9413e9a0b7ff.sample"
+
+[deps]
+
+source_file="res://dzwiek/belkot.wav"
+dest_files=[ "res://.import/belkot.wav-16a558dba3c8daf38c2e9413e9a0b7ff.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

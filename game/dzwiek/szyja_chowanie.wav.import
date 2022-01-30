@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/szyja_chowanie.wav-7a79dd1bb3d997805fdf505ab538eaa7.sample"
+
+[deps]
+
+source_file="res://dzwiek/szyja_chowanie.wav"
+dest_files=[ "res://.import/szyja_chowanie.wav-7a79dd1bb3d997805fdf505ab538eaa7.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
