@@ -32,3 +32,7 @@ func _on_farmer_gameend() -> void:
 	$AnimationPlayer.play("fade_to_black")
 	emit_signal("gameend")
 	
+
+
+func _on_Level_1_sepia():
+	$ColorRect2.visible = true
