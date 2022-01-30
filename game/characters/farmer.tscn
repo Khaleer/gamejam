@@ -34,7 +34,7 @@ shape = SubResource( 1 )
 position = Vector2( 120, 8 )
 scale = Vector2( 0.283333, 0.283333 )
 frames = SubResource( 2 )
-frame = 9
+frame = 3
 speed_scale = 4.0
 playing = true
 
@@ -43,4 +43,30 @@ stream = ExtResource( 12 )
 autoplay = true
 attenuation = 2.21914
 
+[node name="MarginContainer" type="MarginContainer" parent="."]
+margin_left = -104.0
+margin_top = -136.0
+margin_right = 96.0
+margin_bottom = -96.0
+custom_constants/margin_right = 10
+custom_constants/margin_left = 10
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="MarginContainer"]
+margin_left = 10.0
+margin_right = 190.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MarginContainer/Panel"]
+margin_top = 8.0
+margin_right = 192.0
+margin_bottom = 40.0
+text = "Przynies mi kwiat i cebule"
+
 [connection signal="body_entered" from="." to="." method="_on_farmer_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_farmer_body_exited"]
