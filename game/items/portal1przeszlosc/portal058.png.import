@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/portal058.png-b955f04bdb0a0538364d9f6dd75d2053.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://items/portal1przeszlosc/portal058.png"
+dest_files=[ "res://.import/portal058.png-b955f04bdb0a0538364d9f6dd75d2053.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
