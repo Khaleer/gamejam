@@ -29,6 +29,8 @@ position = Vector2( 2275, -26 )
 [node name="paralax" type="CanvasLayer" parent="."]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="paralax"]
+offset = Vector2( 0, -250 )
+transform = Transform2D( 1, 0, 0, 1, 0, -250 )
 scroll_limit_end = Vector2( 0, 600 )
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="paralax/ParallaxBackground"]

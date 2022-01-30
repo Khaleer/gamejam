@@ -23,9 +23,10 @@ scroll_limit_end = Vector2( 0, 600 )
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="paralax/ParallaxBackground"]
 motion_scale = Vector2( 0.9, 1 )
-motion_mirroring = Vector2( 1024, 0 )
+motion_mirroring = Vector2( 1920, 0 )
 
 [node name="Sprite" type="Sprite" parent="paralax/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 0, -686 )
 texture = ExtResource( 9 )
 centered = false
 
