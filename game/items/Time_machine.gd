@@ -4,7 +4,7 @@ signal timewarp
 
 func item_test():
 	var test = 0
-	if Global.item_lightbulb_collected == true:
+	if Global.item_lightbulb_collected == true and Global.item_lightbulb2_collected == true:
 		return true
 
 func _ready():

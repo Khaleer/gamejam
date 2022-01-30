@@ -1,6 +1,6 @@
 [gd_scene load_steps=123 format=2]
 
-[ext_resource path="res://Tileset/Portal postapo.png" type="Texture" id=1]
+[ext_resource path="res://sprite/portalstaly000.png" type="Texture" id=1]
 [ext_resource path="res://items/Time_machine.gd" type="Script" id=2]
 [ext_resource path="res://items/portal1postapo/portal013.png" type="Texture" id=3]
 [ext_resource path="res://items/portal1postapo/portal001.png" type="Texture" id=4]
@@ -135,7 +135,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 254, 111.336 )
+extents = Vector2( 144, 73 )
 
 [node name="Time_machine" type="Area2D"]
 gravity_vec = Vector2( 0, 0 )
@@ -146,12 +146,9 @@ __meta__ = {
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
-animation = "working"
-frame = 43
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, 57.664 )
 shape = SubResource( 1 )
 
 [node name="Panel" type="Panel" parent="."]
