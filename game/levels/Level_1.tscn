@@ -57,7 +57,7 @@ centered = false
 [node name="level" parent="." instance=ExtResource( 3 )]
 
 [node name="Time_machine" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1344, 480 )
+position = Vector2( 1329, 374 )
 
 [node name="player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 681, 514 )
