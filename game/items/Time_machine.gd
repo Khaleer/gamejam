@@ -9,6 +9,14 @@ func item_test():
 
 func _ready():
 	$Panel.visible = false
+	$AnimatedSprite.play("default")
+
+func _physics_process(delta):
+	
+	item_test()
+	
+	if item_test():
+		$AnimatedSprite.play("working")
 
 func _on_Time_machine_body_entered(body: Node) -> void:
 	item_test()

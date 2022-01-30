@@ -60,7 +60,7 @@ position = Vector2( 416, 288 )
 [node name="level" parent="." instance=ExtResource( 3 )]
 
 [node name="Time_machine" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1344, 480 )
+position = Vector2( 1329, 374 )
 
 [node name="items2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 736, 392 )
