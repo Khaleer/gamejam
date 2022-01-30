@@ -26,15 +26,15 @@ position = Vector2( 144, 8 )
 [node name="paralax" type="CanvasLayer" parent="."]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="paralax"]
+scroll_limit_end = Vector2( 0, 600 )
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="paralax/ParallaxBackground"]
 position = Vector2( 0, 300 )
 motion_scale = Vector2( 0.3, 1 )
-motion_mirroring = Vector2( 1024, 0 )
+motion_mirroring = Vector2( 1920, 0 )
 
 [node name="Sprite" type="Sprite" parent="paralax/ParallaxBackground/ParallaxLayer4"]
-position = Vector2( -6.51042e-05, 128 )
-scale = Vector2( 0.533333, 0.533333 )
+position = Vector2( -6.51042e-05, 316 )
 texture = ExtResource( 8 )
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="paralax/ParallaxBackground"]
