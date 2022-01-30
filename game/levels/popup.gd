@@ -6,7 +6,7 @@ func _ready():
 
 func _on_items2_popup_flower() -> void:
 	$MarginContainer.visible = true
-	$MarginContainer/MarginContainer/Label.text = "marchew piękna jest kochana jest marchew piękna jest kochana jest marchew piękna jest kochana jest marchew piękna jest kochana jest "
+	#$MarginContainer/MarginContainer/Label.text = "Portal zostal uruchomiony, teraz możesz teleportowac sie do przeszlosci!"
 	$Timer.start()
 	
 

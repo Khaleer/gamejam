@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/silnik_sprint.wav-50177ad754e1d02e541210bc65ce3d04.sample"
+
+[deps]
+
+source_file="res://dzwiek/silnik_sprint.wav"
+dest_files=[ "res://.import/silnik_sprint.wav-50177ad754e1d02e541210bc65ce3d04.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

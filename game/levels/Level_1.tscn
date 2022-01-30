@@ -1,9 +1,9 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://items/Time_machine.tscn" type="PackedScene" id=1]
 [ext_resource path="res://player/player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://levels/tileset_1.tscn" type="PackedScene" id=3]
-[ext_resource path="res://items/item_flower.tscn" type="PackedScene" id=4]
+[ext_resource path="res://items/item_lightbulb.tscn" type="PackedScene" id=4]
 [ext_resource path="res://items/item_onion.tscn" type="PackedScene" id=5]
 [ext_resource path="res://levels/screen_effect.tscn" type="PackedScene" id=6]
 [ext_resource path="res://levels/Level_1.gd" type="Script" id=7]
@@ -12,49 +12,50 @@
 [ext_resource path="res://sprite/postapo3.png" type="Texture" id=10]
 [ext_resource path="res://sprite/postapo2.png" type="Texture" id=11]
 [ext_resource path="res://sprite/postapo1.png" type="Texture" id=12]
+[ext_resource path="res://dzwiek/muzyka_smutna.wav" type="AudioStream" id=13]
 
 [node name="Level_1" type="Node2D"]
 script = ExtResource( 7 )
 
-[node name="player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 416, 288 )
+[node name="paralax" type="CanvasLayer" parent="."]
 
-[node name="paralax" type="CanvasLayer" parent="player"]
-
-[node name="ParallaxBackground" type="ParallaxBackground" parent="player/paralax"]
+[node name="ParallaxBackground" type="ParallaxBackground" parent="paralax"]
 scroll_limit_end = Vector2( 0, 600 )
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="player/paralax/ParallaxBackground"]
+[node name="ParallaxLayer" type="ParallaxLayer" parent="paralax/ParallaxBackground"]
 motion_scale = Vector2( 0.9, 1 )
 motion_mirroring = Vector2( 1024, 0 )
 
-[node name="Sprite" type="Sprite" parent="player/paralax/ParallaxBackground/ParallaxLayer"]
+[node name="Sprite" type="Sprite" parent="paralax/ParallaxBackground/ParallaxLayer"]
 texture = ExtResource( 9 )
 centered = false
 
-[node name="ParallaxLayer2" type="ParallaxLayer" parent="player/paralax/ParallaxBackground"]
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="paralax/ParallaxBackground"]
 motion_scale = Vector2( 0.7, 1 )
 motion_mirroring = Vector2( 1024, 0 )
 
-[node name="Sprite" type="Sprite" parent="player/paralax/ParallaxBackground/ParallaxLayer2"]
+[node name="Sprite" type="Sprite" parent="paralax/ParallaxBackground/ParallaxLayer2"]
 texture = ExtResource( 10 )
 centered = false
 
-[node name="ParallaxLayer3" type="ParallaxLayer" parent="player/paralax/ParallaxBackground"]
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="paralax/ParallaxBackground"]
 motion_scale = Vector2( 0.5, 1 )
 motion_mirroring = Vector2( 1024, 0 )
 
-[node name="Sprite" type="Sprite" parent="player/paralax/ParallaxBackground/ParallaxLayer3"]
+[node name="Sprite" type="Sprite" parent="paralax/ParallaxBackground/ParallaxLayer3"]
 texture = ExtResource( 11 )
 centered = false
 
-[node name="ParallaxLayer4" type="ParallaxLayer" parent="player/paralax/ParallaxBackground"]
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="paralax/ParallaxBackground"]
 motion_scale = Vector2( 0.4, 1 )
 motion_mirroring = Vector2( 1024, 0 )
 
-[node name="Sprite" type="Sprite" parent="player/paralax/ParallaxBackground/ParallaxLayer4"]
+[node name="Sprite" type="Sprite" parent="paralax/ParallaxBackground/ParallaxLayer4"]
 texture = ExtResource( 12 )
 centered = false
+
+[node name="player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 416, 288 )
 
 [node name="level" parent="." instance=ExtResource( 3 )]
 
@@ -70,6 +71,10 @@ position = Vector2( 344, 216 )
 [node name="transition_Screen" parent="." instance=ExtResource( 6 )]
 
 [node name="popup" parent="." instance=ExtResource( 8 )]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 13 )
+autoplay = true
 
 [connection signal="timewarp" from="Time_machine" to="transition_Screen" method="_on_Time_machine_timewarp"]
 [connection signal="popup_flower" from="items2" to="popup" method="_on_items2_popup_flower"]
