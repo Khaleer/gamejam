@@ -8,7 +8,7 @@ func item_test():
 		test = test + 1
 	if Global.item_onion_collected == true:
 		test = test+1
-	if test == 2:
+	if test >= 1:
 		return true
 
 func _ready():
