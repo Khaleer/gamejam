@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://UI_START_MENU.gd" type="Script" id=1]
 [ext_resource path="res://sprite/farmaruiny3.png" type="Texture" id=2]
 [ext_resource path="res://sprite/farmaruiny2.png" type="Texture" id=3]
 [ext_resource path="res://sprite/farmaruiny.png" type="Texture" id=4]
 [ext_resource path="res://sprite/farmaruinyniebo.png" type="Texture" id=5]
+[ext_resource path="res://sprite/tytuł2.png" type="Texture" id=6]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -52,38 +53,29 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="."]
-anchor_top = 0.5
-anchor_bottom = 0.5
-margin_top = -38.5
-margin_right = 240.0
-margin_bottom = 38.5
-text = "TITLE"
-align = 1
-valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="start" type="Button" parent="."]
-margin_left = 40.0
-margin_top = 384.0
-margin_right = 208.0
-margin_bottom = 444.0
+margin_left = 89.0
+margin_top = 268.0
+margin_right = 257.0
+margin_bottom = 328.0
 text = "START GAME"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="quit" type="Button" parent="."]
-margin_left = 40.7097
-margin_top = 448.0
-margin_right = 208.71
-margin_bottom = 510.0
+margin_left = 89.7097
+margin_top = 332.0
+margin_right = 257.71
+margin_bottom = 394.0
 text = "Quit"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Tytuł2" type="Sprite" parent="."]
+position = Vector2( 211, 119 )
+texture = ExtResource( 6 )
 
 [connection signal="pressed" from="start" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
