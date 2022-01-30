@@ -60,10 +60,10 @@ centered = false
 position = Vector2( 1329, 374 )
 
 [node name="player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 681, 514 )
+position = Vector2( 623, 513 )
 
 [node name="items" parent="." instance=ExtResource( 4 )]
-position = Vector2( 2238, -799 )
+position = Vector2( 2291, -589 )
 
 [node name="items2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 4694, 487 )
