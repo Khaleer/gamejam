@@ -22,7 +22,7 @@ position = Vector2( 984, 509 )
 [node name="level" parent="." instance=ExtResource( 1 )]
 
 [node name="player" parent="." instance=ExtResource( 2 )]
-position = Vector2( -101, 543 )
+position = Vector2( 521, 542 )
 
 [node name="transition_Screen" parent="." instance=ExtResource( 3 )]
 
