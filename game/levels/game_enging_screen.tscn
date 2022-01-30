@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://levels/game_enging_screen.gd" type="Script" id=1]
 [ext_resource path="res://levels/screen_effect.tscn" type="PackedScene" id=2]
+[ext_resource path="res://sprite/bckgr1.png" type="Texture" id=3]
+[ext_resource path="res://sprite/bckgr2.png" type="Texture" id=4]
+[ext_resource path="res://sprite/bckgr3.png" type="Texture" id=5]
+[ext_resource path="res://sprite/farmaniebo.png" type="Texture" id=6]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -11,22 +15,29 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Sprite4" type="Sprite" parent="Node2D"]
+scale = Vector2( 0.554167, 0.554167 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="Sprite3" type="Sprite" parent="Node2D"]
+texture = ExtResource( 5 )
+centered = false
+
+[node name="Sprite2" type="Sprite" parent="Node2D"]
+texture = ExtResource( 4 )
+centered = false
+
+[node name="Sprite" type="Sprite" parent="Node2D"]
+texture = ExtResource( 3 )
+centered = false
+
 [node name="ColorRect" type="ColorRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-color = Color( 0.101961, 0.101961, 0.101961, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ColorRect2" type="ColorRect" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 264.0
-margin_top = 152.0
-margin_right = -264.0
-margin_bottom = -72.0
-color = Color( 0.498039, 0.764706, 0.560784, 1 )
+color = Color( 0.101961, 0.101961, 0.101961, 0.486275 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -66,7 +77,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button" type="Button" parent="."]
+[node name="transition_Screen" parent="." instance=ExtResource( 2 )]
+
+[node name="Button" type="Button" parent="transition_Screen"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -80,6 +93,4 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="transition_Screen" parent="." instance=ExtResource( 2 )]
-
-[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="transition_Screen/Button" to="." method="_on_Button_pressed"]
