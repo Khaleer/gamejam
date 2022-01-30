@@ -156,7 +156,7 @@ position = Vector2( 984, 509 )
 position = Vector2( 514, 473 )
 frames = SubResource( 1 )
 animation = "New Anim"
-frame = 2
+frame = 30
 playing = true
 
 [node name="player" parent="." instance=ExtResource( 2 )]
