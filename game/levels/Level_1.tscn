@@ -62,8 +62,11 @@ position = Vector2( 1329, 374 )
 [node name="player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 681, 514 )
 
+[node name="items" parent="." instance=ExtResource( 4 )]
+position = Vector2( 2238, -799 )
+
 [node name="items2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 736, 392 )
+position = Vector2( 4694, 487 )
 
 [node name="transition_Screen" parent="." instance=ExtResource( 6 )]
 
