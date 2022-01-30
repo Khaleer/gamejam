@@ -7,7 +7,7 @@ script = ExtResource( 1 )
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 margin_right = 456.0
-margin_bottom = 184.0
+margin_bottom = 88.0
 custom_constants/margin_right = 40
 custom_constants/margin_top = 20
 custom_constants/margin_left = 40
@@ -20,7 +20,7 @@ __meta__ = {
 margin_left = 40.0
 margin_top = 20.0
 margin_right = 416.0
-margin_bottom = 164.0
+margin_bottom = 68.0
 color = Color( 0.419608, 0.419608, 0.419608, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -30,16 +30,16 @@ __meta__ = {
 margin_left = 40.0
 margin_top = 20.0
 margin_right = 416.0
-margin_bottom = 164.0
+margin_bottom = 68.0
 custom_constants/margin_right = 20
 custom_constants/margin_left = 20
 
 [node name="Label" type="Label" parent="MarginContainer/MarginContainer"]
 margin_left = 20.0
-margin_top = 31.0
+margin_top = 8.0
 margin_right = 356.0
-margin_bottom = 113.0
-text = "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+margin_bottom = 39.0
+text = "Portal zostal uruchomiony, teraz możesz teleportowac sie do przeszlosci!"
 autowrap = true
 
 [node name="Timer" type="Timer" parent="."]
