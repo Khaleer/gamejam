@@ -77,6 +77,7 @@ position = Vector2( 225, -153 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 10 )
+volume_db = -1.238
 autoplay = true
 
 [connection signal="gameend" from="farmer" to="transition_Screen" method="_on_farmer_gameend"]
