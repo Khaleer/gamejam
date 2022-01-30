@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Portal postapo.png-67f9a6908f14c45ce16a2dc6a351e1fd.stex"
+path="res://.import/farmaruiny.png-538424d77bf325faf3b72ccc912bdd9e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tileset/Portal postapo.png"
-dest_files=[ "res://.import/Portal postapo.png-67f9a6908f14c45ce16a2dc6a351e1fd.stex" ]
+source_file="res://sprite/farmaruiny.png"
+dest_files=[ "res://.import/farmaruiny.png-538424d77bf325faf3b72ccc912bdd9e.stex" ]
 
 [params]
 

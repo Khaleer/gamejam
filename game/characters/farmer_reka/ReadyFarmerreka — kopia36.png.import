@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Portal postapo.png-67f9a6908f14c45ce16a2dc6a351e1fd.stex"
+path="res://.import/ReadyFarmerreka — kopia36.png-9dfa5a4f6fb69e50fc8f7436c7c3ec96.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tileset/Portal postapo.png"
-dest_files=[ "res://.import/Portal postapo.png-67f9a6908f14c45ce16a2dc6a351e1fd.stex" ]
+source_file="res://characters/farmer_reka/ReadyFarmerreka — kopia36.png"
+dest_files=[ "res://.import/ReadyFarmerreka — kopia36.png-9dfa5a4f6fb69e50fc8f7436c7c3ec96.stex" ]
 
 [params]
 

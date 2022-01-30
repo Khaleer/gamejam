@@ -2,6 +2,8 @@ extends CanvasLayer
 
 signal transitioned
 signal timerstart
+signal gameend
+
 func transition_from_black():
 	$AnimationPlayer.play("fade_to_transparent")
 
@@ -24,3 +26,9 @@ func _on_Time_machine_timewarp() -> void:
 
 func _on_Timer_timeout() -> void:
 	get_tree().change_scene("res://levels/Level_2.tscn")
+
+
+func _on_farmer_gameend() -> void:
+	$AnimationPlayer.play("fade_to_black")
+	emit_signal("gameend")
+	
