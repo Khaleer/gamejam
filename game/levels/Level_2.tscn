@@ -19,7 +19,7 @@ script = ExtResource( 4 )
 [node name="level" parent="." instance=ExtResource( 1 )]
 
 [node name="farmer" parent="." instance=ExtResource( 9 )]
-position = Vector2( 1792, 448 )
+position = Vector2( 1795, 510 )
 
 [node name="player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 2275, -26 )
@@ -69,11 +69,11 @@ motion_mirroring = Vector2( 1024, 0 )
 texture = ExtResource( 5 )
 centered = false
 
-[node name="items" parent="." instance=ExtResource( 11 )]
-position = Vector2( 1818, 261 )
+[node name="items2" parent="." instance=ExtResource( 12 )]
+position = Vector2( -1558, -702 )
 
-[node name="items" parent="items" instance=ExtResource( 12 )]
-position = Vector2( 225, -153 )
+[node name="items" parent="." instance=ExtResource( 11 )]
+position = Vector2( 2576, -515 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 10 )
