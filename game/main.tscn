@@ -58,7 +58,7 @@ margin_left = 89.0
 margin_top = 268.0
 margin_right = 257.0
 margin_bottom = 328.0
-text = "START GAME"
+text = "Rozpocznij gre"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -68,7 +68,7 @@ margin_left = 89.7097
 margin_top = 332.0
 margin_right = 257.71
 margin_bottom = 394.0
-text = "Quit"
+text = "rozpocznij gre"
 __meta__ = {
 "_edit_use_anchors_": false
 }
