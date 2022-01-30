@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/grzyb_rozkladanie_sie.wav-023523ca255c2c68846489973edaa13d.sample"
+
+[deps]
+
+source_file="res://dzwiek/grzyb_rozkladanie_sie.wav"
+dest_files=[ "res://.import/grzyb_rozkladanie_sie.wav-023523ca255c2c68846489973edaa13d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
