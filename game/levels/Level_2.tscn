@@ -72,10 +72,10 @@ stream = ExtResource( 10 )
 autoplay = true
 
 [node name="items" parent="." instance=ExtResource( 12 )]
-position = Vector2( 1264, 392 )
+position = Vector2( -1592, -656 )
 
 [node name="items2" parent="." instance=ExtResource( 11 )]
-position = Vector2( 1808, 248 )
+position = Vector2( 2608, -544 )
 
 [connection signal="gameend" from="farmer" to="transition_Screen" method="_on_farmer_gameend"]
 [connection signal="gameend" from="transition_Screen" to="." method="_on_transition_Screen_gameend"]

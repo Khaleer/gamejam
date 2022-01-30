@@ -12,9 +12,10 @@ func _ready() -> void:
 	$transition_Screen/AnimationPlayer.play("fade_from_white")
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta: float) -> void:
-#	pass
+
+func _process(delta: float) -> void:
+	if $AudioStreamPlayer.playing == false:
+		$AudioStreamPlayer.play()
 
 
 func _on_transition_Screen_gameend() -> void:
