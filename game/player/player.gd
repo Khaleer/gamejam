@@ -12,16 +12,20 @@ func get_input():
 	velocity.x = 0
 	if Input.is_action_pressed("right"):
 		velocity.x += speed
-		$Sprite.flip_h = false
+		$AnimatedSprite.play("default")
+		$AnimatedSprite.flip_h = false
 	if Input.is_action_pressed("left"):
 		velocity.x -= speed
-		$Sprite.flip_h = true
+		$AnimatedSprite.play("default")
+		$AnimatedSprite.flip_h = true
 	if Input.is_action_pressed("right") && Input.is_action_pressed("fast_movement"):
 		velocity.x += speed * 2
-		$Sprite.flip_h = false
+		$AnimatedSprite.play("default")
+		$AnimatedSprite.flip_h = false
 	if Input.is_action_pressed("left") && Input.is_action_pressed("fast_movement"):
 		velocity.x -= speed * 2
-		$Sprite.flip_h = true
+		$AnimatedSprite.play("default")
+		$AnimatedSprite.flip_h = true
 		
 		
 
